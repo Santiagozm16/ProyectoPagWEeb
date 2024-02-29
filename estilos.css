@@ -1,0 +1,383 @@
+*{
+    box-sizing: border-box;
+}
+
+/*
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800*/
+
+.open-sans-mi-clase {
+  font-family: "Open Sans", sans-serif; /* Especifica Open Sans como la fuente principal */
+  font-optical-sizing: auto; /* Opcional, ajusta el tamaño óptico de la fuente */
+  font-weight: 400; /* Especifica el peso de la fuente (por ejemplo, 400 para normal) */
+  font-style: normal; /* Especifica el estilo de la fuente (normal, cursiva, etc.) */
+  font-variation-settings: /* Opcional, ajusta otras características de la fuente (ancho, etc.) */
+    "wdth" 100; /* Ancho de la fuente, 100 es el valor predeterminado */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	font-family: "Open Sans" , sans-serif;
+}
+
+h1{
+    font-size: 44px;
+	color: #f5f0ed;
+}
+
+h2{
+    font-size: 28px;
+	color: #f5f0ed;
+}
+
+h3{
+    font-size: 24px;
+	font-weight: 900;
+}
+
+a{
+	font-size: 14px;
+}
+
+/*Cabezera*/
+
+.Cabezera{
+	position: relative;
+	background-image: url("Imágenes/Fondo1.jpg");
+	background-size: cover;
+	background-position: center;	
+	color: #f5f0ed;
+	width:100%;
+	overflow: hidden;
+	min-height: 350px;
+	max-height: 500px;
+}
+
+#Logo{
+	position: absolute;
+	top:5%;
+	left:2%;
+}
+.Encabezado{
+	text-align: center;
+}
+
+.Separador{
+	width: 100px;
+	height: 2px;
+	margin: 1.2em auto;
+	background-color:#f5f0ed;
+	display: block;
+	border-radius: 10px;
+}
+
+h2.Encabezado{
+	margin-top:5em;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.Cabezera p{
+	width: 70%;
+	margin: 5px auto;
+	background-image: url(none);
+	text-align: center;
+	/*font-weight: 16px;*/
+	margin-bottom: 50px;
+}
+
+#Boton-menu{
+	width: 50px;
+	height: 50px;
+    background-color: #d03b40;
+	position: absolute;
+	right: 20px;
+	top: 7%;
+
+}
+
+span.Boton-menu{
+	margin: 7.5px 10px;
+	display: block;
+	background-color: #f5f0ed;
+	width: 30px;
+	height: 6px;
+	border-radius: 10px;
+}
+
+/*Contenedor Rojo*/
+
+.contenedor-rojo{
+	text-align: center;
+	overflow: hidden;
+	background-color: #d03b40;
+	width: 100%;
+	padding-top: 40px;
+}
+
+/*Contenido dentro de las cajas*/
+
+h2.contenido-cajas{
+	margin-top: 0px;
+	text-align: center;
+	color: #ded6c0;
+	font-weight: 800px;
+}
+
+p.contenido-cajas{
+	color: #ded6c0;
+	width: 80%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+
+/*Contenedor Beige*/
+.contenedor-beige{
+	text-align: center;
+	overflow: hidden;
+	background-color: #ded6c0;
+	width: 100%;
+	padding-top: 40px;
+}
+
+.contenedor-beige h2, .contenedor-beige p{
+	color:#d03b40;
+}
+
+/*Contenedor con Imagen seccion productos*/
+.contenedor-imagen{
+	text-align: center;
+	overflow: hidden;
+	padding-top: 40px;
+	background-image: url("Imágenes/Fondo2.jpg");
+	background-size: cover;
+}
+
+.contenedor-imagen span{
+	background-color: #ded6c0;
+}
+.contenedor-imagen a{
+	display: inline-block;
+	border: 2px solid #ded6c0;
+	text-align: center;
+	text-decoration: none;
+	color: #ded6c0;
+	padding: 15px;
+	margin-bottom: 40px;
+}
+
+.productos {
+	padding-top: 30px;
+	overflow: hidden;
+	text-align: center;
+	background-color: #f5f0ed;
+	padding-bottom: 40px;
+}
+
+.productos img{
+	width: 26%;
+	margin-bottom: 15px;
+}
+
+.productos h3, .productos p{
+	color: #3c3c3b;
+	text-align: left;
+	padding-left: 5%;
+	width: 100%;
+	margin: 0;
+}
+
+.contenedor-beige h3, .contenedor-beige a{
+	color: #d03b40;
+	text-decoration: none;
+}
+
+.contenedor-rojo h3, .contenedor-rojo a{
+	color: #ded6c0;
+	text-decoration: none;
+}
+
+.footer {
+	overflow: hidden;
+	width: 100%;
+	background-color: #251d1b;
+}
+
+.footer p{
+	margin: 20px;
+	color: #f5f0ed;
+}
+
+/*Menu CSS*/
+div.menu, ul.menu {
+	background-color: #251d1b;
+	padding: 3px;
+	list-style-type: none;
+}
+
+.menu li{
+	border-bottom: 2px solid white;
+	width: 100%
+}
+
+.menu a{
+	text-decoration: none;
+	color: #f5f0ed;
+	font-weight: 780;
+}
+
+/*Menu JS*/
+
+@media screen and (max-width: 600px){
+	
+	.js div.menu{ /*Estilo para el menu .JS, reajustar la caja que muestra la lista*/
+		background-color: transparent;
+		max-height: 0px; /*Se le asigna una altura de 0 para que permanezca oculto*/
+		overflow: hidden; /*El contenido no salga de las dimensiones asignadas*/
+		transition: max-height 0.25s; /*Transicion para desplegar el menu*/
+		position: absolute; /*Cambio de posicion de este div para desplegarlo en la parte de arriba de la pagina a pesar que esta escrito
+		abajo en el HTML*/
+		top: 80px; /*Cordenadas*/
+		right: 20px;
+		width: 30%; /*Tamaño de la caja*/	
+	}
+	
+	.js div.menu ul{
+		background-color: transparent;
+	}
+	
+	.js div.menu a{ /*Estilo de los links del menu desplegable*/
+		color: white;
+		margin: 5px 0px;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	
+	.js div.menu li{ /*Estilo de los elementos lista del menu desplegable*/
+		margin: 5px 0px;
+		border-bottom: 2px solid white;
+		width: 100%;
+		background-color: transparent;
+	}
+	.js div.menu.menu-desplegado{ /*Claseañadida atravez de javascrpit*/
+		max-height: 250px;
+		background-color: #d03b40;
+	}
+}
+
+
+@media screen and (min-width: 601px){
+	/*Menu*/
+	.Boton-menu{
+		display: none;
+	}
+	
+	div.menu{
+		position: absolute;
+		top: 23.5px;
+		right: 2%;
+		background-color: transparent;
+	}
+	
+	ul.menu{
+		background-color: transparent;
+	}
+	li.menu{
+		margin: 0px 2px;
+		display: inline;
+		background-color: transparent;
+		border-bottom: 0px;
+	}
+	
+	/*Cabezera*/
+	
+	/*Seccion 1*/
+	div.seccion_1{
+		overflow: hidden;
+	}
+	
+	.seccion_1 div{
+		width:50%;
+		float:left;
+		min-height: 350px;
+	}
+	/*Parrafo de "ven a desayunar*/
+	.contenedor-imagen p{
+		width: 50%;
+	}
+	/*Seccion de productos*/
+	div.seccion-productos{
+		overflow: hidden;
+	}
+	div.productos{
+		position: relative;
+		text-align: left;
+		float:left;
+		width: 50%;
+		min-height: 160px;
+		/*border-bottom: 2px solid black;*/
+		padding-bottom: 0px;
+	}
+	
+	.productos img{
+		width: 26%;
+		margin-left: 15px;
+	}
+	
+	.productos h3{
+		position: absolute;
+		top: 10%;
+		right: -26%;
+		font-size: 1em;
+	}
+	
+	.productos p{
+		overflow: inherit;
+		position: absolute;
+		width: 70%;
+		top: 24%;
+		right: 4%;
+		font-size: 0.789em;
+		/*padding-right: 30%;*/
+	}
+	/*Sección de Conctacto*/
+	div.contacto{
+		overflow: hidden;
+	}
+	.contacto div {
+		width:50%;
+		min-height: 304px;
+		display: inherit;
+		float: left;
+	}
+}
+
+@media screen and (min-width: 1100px){
+	
+	.seccion_1 div{
+		min-height: 300px;
+	}
+	
+	/*Seccion Productos*/
+	.productos h3{
+		position: absolute;
+		top: 10%;
+		right: -26%;
+		font-size: 1.25em;
+	}
+	
+	.productos p{
+		overflow: inherit;
+		position: absolute;
+		width: 70%;
+		top: 24%;
+		right: 4%;
+		font-size: 1em;
+		/*padding-right: 30%;*/
+	}
+	
+}
