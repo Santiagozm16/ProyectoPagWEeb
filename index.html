@@ -1,81 +1,91 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
     <head>
-        <title>Portafolio - Andres Rodriguez</title>
-		<meta charset="UTF-8">
-		<link rel="icon" type="image/jpg" href="imagenes/icono.jpg">
-		<link rel="stylesheet" href="css/estilos.css">
-		<!--Importar Fuentes-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Café Oslo</title>
+        <link rel="stylesheet" href="estilos.css">
+		<!-- Incluir Tipografias-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	</head>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
     <body>
-		<nav>
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#services">Services</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
+        <div class="Cabezera">
+        <img src="Imágenes/Logo.png" id="Logo" alt="Logo Café Oslo">
+        <div class="Boton-menu" id="Boton-menu">
+			<a id="enlace-menu" href="#menu">
+				<span class="Boton-menu"></span>
+				<span class="Boton-menu"></span>
+				<span class="Boton-menu"></span>
+			</a>
+        </div>
+			<h2 class="Encabezado"> RECIÉN HECHO,<br> TODOS LOS DÍAS </h2>
+			<span class="Separador"></span>
+			<p class="Cabezera">Chocolate cake chocolate cake pie candy canes chocolate cake bonbon. I love marzipan liquorice I love cake chupa chups. Pie danish macaroon ice cream ice cream. Bonbon sweet bonbon jelly beans jelly-o I love lollipop. </p>
+        </div>
+		<div class="seccion_1">
+			<div class="contenedor-rojo">
+				<h2 class="contenido-cajas">VEN AL BRUNCH DE <br> LOS DOMINGOS</h2>
+				<p class="contenido-cajas"> Sesame snaps icing chocolate bar. I love donut powder sesame snaps. Jelly-o topping caramels. Sugar plum I love gummi bears .</p>
+			</div>
+			<div class="contenedor-beige">
+				<h2 class="contenido-cajas">CELEBRA TUS FIESTAS <br>CON NOSOTROS</h2>
+				<p class="contenido-cajas">Bonbon sweet bonbon jelly beans jelly-o I love lollipop. Cookie sesame snaps bear claw. Cake dragée danish. Powder I love liquorice macaroon.</p>
+			</div>
+		</div>
 
-		<section id="about" class="about">
-			<div class="empty">
-				<figure class="avatar">
-					<img src = "imagenes/avatar.png" alt ="avatar" class="avatar">
-				</figure>
+		<div class="contenedor-imagen">
+			<h2 class="contenido-cajas">VEN A DESAYUNAR</h2>
+			<span class="Separador"></span>
+			<p class="contenido-cajas">Bonbon topping I love sweet roll I love candy icing chocolate jelly. Pie soufflé sweet. Apple pie bonbon caramels powder.</p>
+			<a class="Boton" href="#">DESCUBRE NUESTROS PRODUCTOS</a>
+		</div>
+		<div class="seccion-productos" id="Productos">
+			<div class="productos">
+				<img src="Imágenes/Icono1.png" alt="Icono Pan">
+				<h3 class="contenido-cajas"> PAN RECIÉN HECHO </h3>
+				<p class="contenido-cajas">Cupcake danish I love halvah bonbon icing donut. Sweet caramels gingerbread bear claw jujubes chocolate cake pudding sesame snaps bonbon. Chocolate cake wafer pudding muffin wafer sweet roll I love chupa chups. Apple pie jujubes ice cream sugar plum topping.</p>
 			</div>
-			<article>
-				<div class="title">
-					<h1 class="headliner">Andrés Santiago Rodríguez Prada</h1>
-				</div>
-				<div class="description">
-					<p class="text">¡Hola! 👋🏻 ¡Bienvenido a mi portafolio! Soy un Ingeniero Multimedia apasionado por el modelado, texturizado y rigging en 3D, así como por los motion graphics, desarrollo web frontend y animación 2D. Además, me encanta aprender nuevos trucos ninja y desarrollar mis habilidades para llevarlas al siguiente nivel. Siempre estoy en constante estudio para aprender más.</p>
-				</div>
-			</article>
-		</section>
-		
-		<section id="services" class="services services-html sticky"> <!--Se aplican 2 estilos al mismo tiempo ya que tiene 2 clases, se diferencian por el espacio-->
-				<figure>
-					<img src="imagenes/diamond.png" alt="img_service1" width="200px">
-				</figure>
-				<div class="text">
-					<h2>3D</h2>
-					<p>He llevado a cabo proyectos en 3D desde la concepción de la idea hasta la entrega del producto final. Además, tengo experiencia trabajando con referentes y puedo encargarme de todo el proceso de producción de una pieza en 3D, desde su modelado hasta el render final. 💻🎨</p>
-					<a href="https://www.artstation.com/santiagorodriguezp" target="_blank">¡Mira mis trabajos 3D!</a>
-				</div>
-		</section>
-		
-		<section class="services services-css sticky"> <!--Se aplican 2 estilos al mismo tiempo ya que tiene 2 clases, se diferencian por el espacio-->
-			
-			<figure>
-				<img src="imagenes/triangle.png" alt="img_service2" width="200px">
-			</figure>
-			<div class="text">
-				<h2>Motion Graphics</h2>
-				<p>He realizado proyectos de Animación 2D que involucran Motion Graphics y Edición de Video. Además, he diseñado y modificado vectores específicamente para su integración y uso en las animaciones 2D. Estos trabajos los he llevado a cabo principalmente en After Effects y Premiere, y también he tenido experiencia utilizando Photoshop e Illustrator. 🎬🖌️</p>
-				<a href="https://www.behance.net/santiagorodriguezp" target="_blank">¡Echa un vistazo a mis trabajos aquí!</a>
+			<div class="productos">
+				<img src="Imágenes/Icono2.png" alt="Icono Pan">
+				<h3 class="contenido-cajas">TARTAS PARA CADA DÍA</h3>
+				<p class="contenido-cajas">Cookie cake jelly beans chocolate cake carrot cake croissant icing. Caramels liquorice sesame snaps sugar plum I love bonbon. I love I love halvah.</p>
 			</div>
-		</section>
-		
-		<section class="services services-js sticky"> <!--Se aplican 2 estilos al mismo tiempo ya que tiene 2 clases, se diferencian por el espacio-->
-			<figure>
-				<img src="imagenes/octagon.png" alt="img_service3" width="200px">
-			</figure>
-			<div class="text">
-				<h2>Desarrollo Web</h2>
-				<p>La página que estás navegando fue desarrollada por mí, al igual que otro pequeño proyecto de desarrollo frontend, ambos utilizando HTML, CSS y JavaScript puro con diseño responsive. 💻🚀</p>
-				<a href="https://santiagozm16.github.io/ProyectoPagWEeb/" target="_blank">Proyecto 🤓</a>
+			<div class="productos">
+				<img src="Imágenes/Icono3.png" alt="Icono Pan">
+				<h3 class="contenido-cajas">PRUEBA NUESTROS DULCES</h3>
+				<p class="contenido-cajas">Caramels liquorice sesame snaps sugar plum I love bonbon. I love I love halvah. I love marzipan cake I love donut tiramisu pudding cotton candy liquorice. Jelly beans chocolate brownie gummi bears.</p>
 			</div>
-		</section>
-		
-		<section id="contact" class="contact full-screen">
-		<a href="mailto:santiagozm115@gmail.com">santiagozm115@gmail.com</a>
-		</section>
-		<script src="js/script.js"></script>
+			<div class="productos">
+				<img src="Imágenes/Icono4.png" alt="Icono Pan">
+				<h3 class="contenido-cajas">INGREDIENTES ECOLÓGICOS</h3>
+				<p class="contenido-cajas">Carrot cake fruitcake cheesecake muffin lollipop croissant dessert halvah. Cake pie bear claw marshmallow marzipan cake. Carrot cake I love cotton candy ice cream chupa chups donut. Lemon</p>
+			</div>
+		</div>
+		<div class="contacto" id="Contacto">
+			<div class="contenedor-beige">
+				<h3 class="contenido-cajas">CONTACTA CON <br> NOSOTROS</h3>
+				<p class="contenido-cajas">Si quieres hacer una reserva, tienes alguna sugerencia o tsimplemente quieres saludar, escríbenos a: <strong><a href="mailto:cafeoslo@cafeoslo.es">cafeoslo@cafeoslo.es</a></strong></p>
+			</div>
+			<div class="contenedor-rojo">
+				<h3 class="contenido-cajas">¿SABES DÓNDE <br> ESTAMOS?</h3>
+				<p class="contenido-cajas"> C/ Mayor, 15 <br>00000 Barcelona<br>
+				<strong><a href="#">(Google Maps)</a></strong></p>
+			</div>
+		</div>
+		<div class="menu" id="menu">
+			<ul class="menu">
+				<li class="menu"><a href="#">EL ESPACIO</a></li>
+				<li class="menu"><a href="#Productos">PRODUCTOS</a></li>
+				<li class="menu"><a href="#">OFERTAS</a></li>
+				<li class="menu"><a href="#">RESERVAS</a></li>
+				<li class="menu"><a href="#Contacto">CONTACTO</a></li>
+			</ul>
+		</div>
+		<div class= "footer">
+		<p> Realizado como proyecto para un curso de Domestika 2024 <br> Todos los derechos reservados</p>
+		</div>
+		<script src="javascript.js"></script>
     </body>
 </html>
